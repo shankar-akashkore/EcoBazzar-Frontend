@@ -1,4 +1,4 @@
-<ngx-spinner bdOpacity="0.3" size="medium" type="ball-spin-clockwise" [fullScreen]="true"></ngx-spinner>
+<!-- <ngx-spinner bdOpacity="0.3" size="medium" type="ball-spin-clockwise" [fullScreen]="true"></ngx-spinner>
 
 <app-navbar></app-navbar>
 
@@ -9,11 +9,25 @@
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-lime-400/15 rounded-full blur-3xl animate-pulse delay-500"></div>
   </div>
 
-  <div class="pt-20"> <!-- Just enough for the fixed navbar -->
+  <div class="pt-20">
     <div class="max-w-7xl mx-auto px-6">
       <router-outlet></router-outlet>
     </div>
   </div>
+</div>
+
+<app-footer></app-footer> -->
+
+
+
+
+
+<ngx-spinner bdOpacity="0.3" size="medium" type="ball-spin-clockwise" [fullScreen]="true"></ngx-spinner>
+
+<app-navbar></app-navbar>
+
+<div class="pt-20">
+  <router-outlet></router-outlet>
 </div>
 
 <app-footer></app-footer>

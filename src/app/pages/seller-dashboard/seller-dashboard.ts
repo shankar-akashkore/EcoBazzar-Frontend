@@ -129,7 +129,10 @@ export class SellerDashboard implements OnInit, OnDestroy {
             titleColor: '#fff',
             bodyColor: '#fff',
             callbacks: {
-              label: (ctx) => `Revenue: ₹${ctx.parsed.y.toLocaleString()}`
+              label: (ctx) => {
+                const value = ctx?.parsed?.y ?? 0;
+                return `Revenue: ₹${value.toLocaleString()}`;
+              }
             }
           }
         },
